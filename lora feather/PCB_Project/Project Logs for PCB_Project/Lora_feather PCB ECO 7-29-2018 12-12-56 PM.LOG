@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=VREF+ Pin=P2-14
+Added Pin To Net: NetName=VREF+ Pin=P2-10
+Added Room: Name=PAGE2 - MCU

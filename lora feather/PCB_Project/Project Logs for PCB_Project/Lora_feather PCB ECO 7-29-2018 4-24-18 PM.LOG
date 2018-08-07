@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=EN Pin=P1-2
+Removed Pin From Net: NetName=BOOT0 Pin=P2-1
+Added Pin To Net: NetName=BOOT0 Pin=P1-2
+Added Pin To Net: NetName=EN Pin=P2-1
+Added Room: Name=PAGE2 - MCU

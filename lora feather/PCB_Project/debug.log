@@ -1,0 +1,4 @@
+[0731/134532:INFO:CONSOLE(1)] "This file is deprecated. Please use `iron-flex-layout/iron-flex-layout-classes.html`, and one of the specific dom-modules instead", source: chrome://resources/polymer/v1_0/iron-flex-layout/classes/iron-shadow-flex-layout-extracted.js (1)
+[0731/134532:INFO:CONSOLE(1)] "This file is deprecated. Please use `iron-flex-layout/iron-flex-layout-classes.html`, and one of the specific dom-modules instead", source: chrome://resources/polymer/v1_0/iron-flex-layout/classes/iron-flex-layout-extracted.js (1)
+[0731/134532:INFO:CONSOLE(0)] "/deep/ combinator is deprecated. See https://www.chromestatus.com/features/6750456638341120 for more details.", source:  (0)
+[0731/134533:INFO:CONSOLE(272)] "Uncaught (in promise) TypeError: Cannot read property 'getStrings' of undefined", source: chrome-extension://mhjfbmdgcfjbbpaeojofohoefgiehjai/pdf.js (272)

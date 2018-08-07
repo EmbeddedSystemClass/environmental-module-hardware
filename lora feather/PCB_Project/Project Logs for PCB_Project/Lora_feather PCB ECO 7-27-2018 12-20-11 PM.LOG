@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=GND Pin=P3-5
+Removed Pin From Net: NetName=+12V Pin=P3-7
+Removed Pin From Net: NetName=GND Pin=P4-5
+Removed Pin From Net: NetName=+12V Pin=P4-7
+Added Pin To Net: NetName=+12V Pin=P3-5
+Added Pin To Net: NetName=GND Pin=P3-7
+Added Pin To Net: NetName=+12V Pin=P4-5
+Added Pin To Net: NetName=GND Pin=P4-7
+Added Room: Name=PAGE2 - MCU

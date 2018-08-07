@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=SCK Pin=P2-6
+Removed Pin From Net: NetName=NSS Pin=P2-7
+Added Pin To Net: NetName=NSS Pin=P2-6
+Added Pin To Net: NetName=SCK Pin=P2-7
+Added Room: Name=PAGE2 - MCU

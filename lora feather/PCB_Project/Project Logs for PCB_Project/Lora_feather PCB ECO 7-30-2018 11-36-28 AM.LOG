@@ -1,0 +1,30 @@
+Added Component: Designator=T1(Test_Pad)
+Add component. Clean all parameters for all variants
+Added Component: Designator=T2(Test_Pad)
+Add component. Clean all parameters for all variants
+Added Component: Designator=T3(Test_Pad)
+Add component. Clean all parameters for all variants
+Added Component: Designator=T4(Test_Pad)
+Add component. Clean all parameters for all variants
+Added Component: Designator=T5(Test_Pad)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetMOD1_8 Pin=MOD1-8
+Added Pin To Net: NetName=NetMOD1_8 Pin=T1-1
+Added Net: Name=NetMOD1_8
+Added Pin To Net: NetName=NetMOD1_9 Pin=MOD1-9
+Added Pin To Net: NetName=NetMOD1_9 Pin=T2-1
+Added Net: Name=NetMOD1_9
+Added Pin To Net: NetName=NetMOD1_10 Pin=MOD1-10
+Added Pin To Net: NetName=NetMOD1_10 Pin=T3-1
+Added Net: Name=NetMOD1_10
+Added Pin To Net: NetName=NetMOD1_11 Pin=MOD1-11
+Added Pin To Net: NetName=NetMOD1_11 Pin=T4-1
+Added Net: Name=NetMOD1_11
+Added Pin To Net: NetName=NetMOD1_12 Pin=MOD1-12
+Added Pin To Net: NetName=NetMOD1_12 Pin=T5-1
+Added Net: Name=NetMOD1_12
+Added Member To Class: ClassName=PAGE2 - MCU Member=Component T1 Test_pad
+Added Member To Class: ClassName=PAGE2 - MCU Member=Component T2 Test_pad
+Added Member To Class: ClassName=PAGE2 - MCU Member=Component T3 Test_pad
+Added Member To Class: ClassName=PAGE2 - MCU Member=Component T4 Test_pad
+Added Member To Class: ClassName=PAGE2 - MCU Member=Component T5 Test_pad

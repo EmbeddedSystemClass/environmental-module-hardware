@@ -1,0 +1,13 @@
+Added Component: Designator=B1(BAT_CON)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Adafruit Industries"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "1862"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=1.5, 10=1.5, 50=1.5, 100=1.5, 1000=1.5, 10000=1.5 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "115"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "485-1862"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3V3 Pin=B1-1
+Added Pin To Net: NetName=+3V3 Pin=B1-1
+Added Pin To Net: NetName=GND Pin=B1-2
+Added Pin To Net: NetName=GND Pin=B1-2
+Added Member To Class: ClassName=PAGE2 - MCU Member=Component B1 Battery connector

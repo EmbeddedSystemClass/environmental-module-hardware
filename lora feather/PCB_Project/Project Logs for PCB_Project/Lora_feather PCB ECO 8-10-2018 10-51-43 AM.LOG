@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=VREF+ Pin=P2-14
+Change Net Name : Old Net Name=VREF+ New Net Name=+3V3
+Added Pin To Net: NetName=VREF+ Pin=P2-14
+Added Net: Name=VREF+

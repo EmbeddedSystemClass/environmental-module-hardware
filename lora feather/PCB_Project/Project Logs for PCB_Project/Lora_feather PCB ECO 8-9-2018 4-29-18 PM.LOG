@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=PB5 Pin=MOD1-40
+Added Pin To Net: NetName=PB5 Pin=U1-2
+Added Pin To Net: NetName=PB5 Pin=U1-3
+Added Pin To Net: NetName=PB5 Pin=U1-5
+Added Net: Name=PB5

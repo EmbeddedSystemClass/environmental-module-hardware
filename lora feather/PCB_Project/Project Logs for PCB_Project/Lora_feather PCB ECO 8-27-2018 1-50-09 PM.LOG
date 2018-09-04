@@ -1,0 +1,531 @@
+Removed Pin From Net: NetName=PA12 Pin=MOD1-1
+Removed Pin From Net: NetName=GND Pin=MOD1-3
+Removed Pin From Net: NetName=+3V3 Pin=MOD1-4
+Removed Pin From Net: NetName=+3V3 Pin=MOD1-5
+Removed Pin From Net: NetName=+3V3 Pin=MOD1-6
+Removed Pin From Net: NetName=GND Pin=MOD1-7
+Removed Pin From Net: NetName=MOSI Pin=MOD1-14
+Removed Pin From Net: NetName=MISO Pin=MOD1-15
+Removed Pin From Net: NetName=SCK Pin=MOD1-16
+Removed Pin From Net: NetName=NSS Pin=MOD1-17
+Removed Pin From Net: NetName=PA10 Pin=MOD1-18
+Removed Pin From Net: NetName=PA9 Pin=MOD1-19
+Removed Pin From Net: NetName=EN Pin=MOD1-20
+Removed Pin From Net: NetName=PA5 Pin=MOD1-21
+Removed Pin From Net: NetName=PA4 Pin=MOD1-22
+Removed Pin From Net: NetName=RX Pin=MOD1-23
+Removed Pin From Net: NetName=TX Pin=MOD1-24
+Removed Pin From Net: NetName=GND Pin=MOD1-25
+Removed Pin From Net: NetName=ANT Pin=MOD1-26
+Removed Pin From Net: NetName=GND Pin=MOD1-27
+Removed Pin From Net: NetName=+3V3 Pin=MOD1-32
+Removed Pin From Net: NetName=PA0 Pin=MOD1-33
+Removed Pin From Net: NetName=MCU_nRST Pin=MOD1-34
+Removed Pin From Net: NetName=SCL Pin=MOD1-35
+Removed Pin From Net: NetName=SDA Pin=MOD1-36
+Removed Pin From Net: NetName=PB2 Pin=MOD1-37
+Removed Pin From Net: NetName=PB7 Pin=MOD1-38
+Removed Pin From Net: NetName=PB6 Pin=MOD1-39
+Removed Pin From Net: NetName=PB5 Pin=MOD1-40
+Removed Pin From Net: NetName=SWDIO Pin=MOD1-41
+Removed Pin From Net: NetName=SWCLK Pin=MOD1-42
+Removed Pin From Net: NetName=BOOT0 Pin=MOD1-43
+Removed Pin From Net: NetName=GND Pin=MOD1-44
+Removed Pin From Net: NetName=PH1 Pin=MOD1-45
+Removed Pin From Net: NetName=PH0 Pin=MOD1-46
+Removed Pin From Net: NetName=GND Pin=MOD1-49
+Removed Pin From Net: NetName=GND Pin=MOD1-50
+Removed Pin From Net: NetName=GND Pin=MOD1-51
+Removed Pin From Net: NetName=GND Pin=MOD1-52
+Removed Pin From Net: NetName=GND Pin=MOD1-53
+Removed Pin From Net: NetName=GND Pin=MOD1-54
+Removed Pin From Net: NetName=GND Pin=MOD1-55
+Removed Pin From Net: NetName=GND Pin=MOD1-56
+Removed Pin From Net: NetName=GND Pin=MOD1-57
+Removed Member From Class: ClassName=PAGE2 - MCU Member=MOD1
+Change component parameters: Designator = "C2"; Footprint = "0603Cap"; UniqueID = "\TIIKQCAP"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Applications"; Value = "Acoustic Noise Reduction"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "10µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2243360.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2243360.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://www.farnell.com/datasheets/2163235.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.farnell.com/datasheets/2163235.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/ZRB18AR61E106ME01-01.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/ZRB18AR61E106ME01-01.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Family"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Features"; Value = "Interposer Termination"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height - Seated (Max)"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Spacing"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Style"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Murata"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "ZRB18AR61E106ME01L"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount, MLCC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature"; Value = "-55°C ~ 85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "0603 (1608 Metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape & Reel (TR)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "5=0.411, 50=0.187, 250=0.142, 500=0.0978, 1500=0.091 (GBP)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ratings"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "ZRB"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size / Dimension"; Value = "0.063" L x 0.031" W (1.60mm x 0.80mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2469398"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "X5R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Thickness (Max)"; Value = "0.047" (1.20mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage - Rated"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C3"; Footprint = "0603Cap"; UniqueID = "\RJAGMSXH"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Applications"; Value = "Acoustic Noise Reduction"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "10µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2243360.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2243360.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://www.farnell.com/datasheets/2163235.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.farnell.com/datasheets/2163235.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/ZRB18AR61E106ME01-01.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/ZRB18AR61E106ME01-01.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Family"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Features"; Value = "Interposer Termination"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height - Seated (Max)"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Spacing"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Style"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Murata"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "ZRB18AR61E106ME01L"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount, MLCC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature"; Value = "-55°C ~ 85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "0603 (1608 Metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape & Reel (TR)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "5=0.411, 50=0.187, 250=0.142, 500=0.0978, 1500=0.091 (GBP)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ratings"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "ZRB"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size / Dimension"; Value = "0.063" L x 0.031" W (1.60mm x 0.80mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2469398"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "X5R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Thickness (Max)"; Value = "0.047" (1.20mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage - Rated"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C5"; Footprint = "0603Cap"; UniqueID = "\JWFVKAOU"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Applications"; Value = "Acoustic Noise Reduction"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "10µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2243360.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2243360.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://www.farnell.com/datasheets/2163235.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.farnell.com/datasheets/2163235.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/ZRB18AR61E106ME01-01.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/ZRB18AR61E106ME01-01.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Family"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Features"; Value = "Interposer Termination"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height - Seated (Max)"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Spacing"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Style"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Murata"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "ZRB18AR61E106ME01L"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount, MLCC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature"; Value = "-55°C ~ 85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "0603 (1608 Metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape & Reel (TR)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "5=0.411, 50=0.187, 250=0.142, 500=0.0978, 1500=0.091 (GBP)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ratings"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "ZRB"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size / Dimension"; Value = "0.063" L x 0.031" W (1.60mm x 0.80mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2469398"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "X5R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Thickness (Max)"; Value = "0.047" (1.20mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage - Rated"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C8"; Footprint = "0603Cap"; UniqueID = "\EFWJKYRI"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Applications"; Value = "Acoustic Noise Reduction"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "10µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2243360.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2243360.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://www.farnell.com/datasheets/2163235.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.farnell.com/datasheets/2163235.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/ZRB18AR61E106ME01-01.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/ZRB18AR61E106ME01-01.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Family"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Features"; Value = "Interposer Termination"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height - Seated (Max)"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Spacing"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Style"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Murata"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "ZRB18AR61E106ME01L"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount, MLCC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature"; Value = "-55°C ~ 85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "0603 (1608 Metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape & Reel (TR)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "5=0.411, 50=0.187, 250=0.142, 500=0.0978, 1500=0.091 (GBP)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ratings"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "ZRB"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size / Dimension"; Value = "0.063" L x 0.031" W (1.60mm x 0.80mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2469398"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "X5R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Thickness (Max)"; Value = "0.047" (1.20mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage - Rated"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C16"; Footprint = "0603Cap"; UniqueID = "\EDUWFOIV"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Applications"; Value = "Acoustic Noise Reduction"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "10µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2243360.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2243360.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://www.farnell.com/datasheets/2163235.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.farnell.com/datasheets/2163235.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/ZRB18AR61E106ME01-01.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/ZRB18AR61E106ME01-01.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Family"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Features"; Value = "Interposer Termination"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height - Seated (Max)"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Spacing"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Style"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Murata"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "ZRB18AR61E106ME01L"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount, MLCC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature"; Value = "-55°C ~ 85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "0603 (1608 Metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape & Reel (TR)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "5=0.411, 50=0.187, 250=0.142, 500=0.0978, 1500=0.091 (GBP)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ratings"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "ZRB"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size / Dimension"; Value = "0.063" L x 0.031" W (1.60mm x 0.80mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2469398"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "X5R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Thickness (Max)"; Value = "0.047" (1.20mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage - Rated"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C17"; Footprint = "0603Cap"; UniqueID = "\HIAVDIAO"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Applications"; Value = "Acoustic Noise Reduction"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "10µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2243360.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2243360.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://www.farnell.com/datasheets/2163235.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.farnell.com/datasheets/2163235.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/ZRB18AR61E106ME01-01.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/ZRB18AR61E106ME01-01.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Family"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Features"; Value = "Interposer Termination"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height - Seated (Max)"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Spacing"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Style"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Murata"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "ZRB18AR61E106ME01L"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount, MLCC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature"; Value = "-55°C ~ 85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "0603 (1608 Metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape & Reel (TR)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "5=0.411, 50=0.187, 250=0.142, 500=0.0978, 1500=0.091 (GBP)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ratings"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "ZRB"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size / Dimension"; Value = "0.063" L x 0.031" W (1.60mm x 0.80mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2469398"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "X5R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Thickness (Max)"; Value = "0.047" (1.20mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage - Rated"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C18"; Footprint = "0603Cap"; UniqueID = "\WPEMWXQP"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Applications"; Value = "Acoustic Noise Reduction"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "22µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Family"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Features"; Value = "Derating Recommended, Interposer Termination"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height - Seated (Max)"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Spacing"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Style"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Murata"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "ZRB18AR60J226ME01L"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount, MLCC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature"; Value = "-55°C ~ 85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "0603 (1608 Metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape & Reel (TR)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "5=0.54, 50=0.246, 250=0.175, 500=0.129, 1500=0.111 (EUR)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ratings"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "ZRB"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size / Dimension"; Value = "0.063" L x 0.031" W (1.60mm x 0.80mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "4282"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2469395"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "X5R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Thickness (Max)"; Value = "0.047" (1.20mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage - Rated"; Value = "6.3V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C9"; Footprint = "0603Cap"; UniqueID = "\EEXSCLHW"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Applications"; Value = "General Purpose"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "1µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/28451/1796654-28451158.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/28451/1796654-28451158.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/16394/e412-c-16394039.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/16394/e412-c-16394039.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/6292/tdkmlcccaprange-6292456.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/6292/tdkmlcccaprange-6292456.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/6292/tdkmlcccaprange-6292458.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/6292/tdkmlcccaprange-6292458.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.ciiva.com/22676/1571323-22676922.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.ciiva.com/22676/1571323-22676922.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Design Resources"; Value = "20 W Non-Isolated Buck LED Driver Using PL LNK460KG"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Family"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Features"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height - Seated (Max)"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Spacing"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Style"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TDK"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "C1608X5R1E105K080AC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount, MLCC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Online Catalog"; Value = "C Series, General Purpose"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature"; Value = "-55°C ~ 85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Other Names"; Value = "445-5146-6"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "0603 (1608 Metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Digi-Reel®   "; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PCN Part Number"; Value = "MLCC Part Number Change 30/Nov/2012"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "10=0.0585, 100=0.0449, 500=0.0335, 1000=0.0279 (GBP)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Product Training Modules"; Value = "C Series General Applications SEAT, CCV, and TVCL Design Tools Guide to Replacing an Electrolytic Capacitor with an MLCC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ratings"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Information"; Value = "RoHS Certificate-MLCC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size / Dimension"; Value = "0.063" L x 0.031" W (1.60mm x 0.80mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Standard Package"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2346891"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "X5R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Thickness (Max)"; Value = "0.037" (0.95mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage - Rated"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C11"; Footprint = "0603Cap"; UniqueID = "\BLWXFLIQ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Applications"; Value = "General Purpose"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "1µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/28451/1796654-28451158.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/28451/1796654-28451158.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/16394/e412-c-16394039.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/16394/e412-c-16394039.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/6292/tdkmlcccaprange-6292456.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/6292/tdkmlcccaprange-6292456.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/6292/tdkmlcccaprange-6292458.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/6292/tdkmlcccaprange-6292458.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.ciiva.com/22676/1571323-22676922.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.ciiva.com/22676/1571323-22676922.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Design Resources"; Value = "20 W Non-Isolated Buck LED Driver Using PL LNK460KG"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Family"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Features"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height - Seated (Max)"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Spacing"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Style"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TDK"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "C1608X5R1E105K080AC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount, MLCC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Online Catalog"; Value = "C Series, General Purpose"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature"; Value = "-55°C ~ 85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Other Names"; Value = "445-5146-6"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "0603 (1608 Metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Digi-Reel®   "; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PCN Part Number"; Value = "MLCC Part Number Change 30/Nov/2012"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "10=0.0585, 100=0.0449, 500=0.0335, 1000=0.0279 (GBP)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Product Training Modules"; Value = "C Series General Applications SEAT, CCV, and TVCL Design Tools Guide to Replacing an Electrolytic Capacitor with an MLCC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ratings"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Information"; Value = "RoHS Certificate-MLCC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size / Dimension"; Value = "0.063" L x 0.031" W (1.60mm x 0.80mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Standard Package"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2346891"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "X5R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Thickness (Max)"; Value = "0.037" (0.95mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage - Rated"; Value = "25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C6"; Footprint = "0603Cap"; UniqueID = "\PNVBDERA"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Automotive Qualification Standard"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "0.1µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance Tolerance"; Value = "± 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ceramic Capacitor Case"; Value = "0603 [1608 Metric]"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2112158.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2112158.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://www.farnell.com/datasheets/2316283.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.farnell.com/datasheets/2316283.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "https://api.kemet.com/component-edge/download/datasheet/C0603C104K4RAC7081.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "https://api.kemet.com/component-edge/download/datasheet/C0603C104K4RAC7081.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dielectric Characteristic"; Value = "X7R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "C0603C104K4RAC7081"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MSL"; Value = "MSL 1 - Unlimited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Cut Tape"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "10=0.0639, 100=0.0337, 500=0.0247, 2500=0.0209 (EUR)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Product Range"; Value = "C Series"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "131460"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2522597"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SVHC"; Value = "No SVHC (15-Jun-2015)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C7"; Footprint = "0603Cap"; UniqueID = "\XEAQQEYL"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Automotive Qualification Standard"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "0.1µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance Tolerance"; Value = "± 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ceramic Capacitor Case"; Value = "0603 [1608 Metric]"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2112158.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2112158.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://www.farnell.com/datasheets/2316283.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.farnell.com/datasheets/2316283.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "https://api.kemet.com/component-edge/download/datasheet/C0603C104K4RAC7081.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "https://api.kemet.com/component-edge/download/datasheet/C0603C104K4RAC7081.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dielectric Characteristic"; Value = "X7R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "C0603C104K4RAC7081"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MSL"; Value = "MSL 1 - Unlimited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Cut Tape"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "10=0.0639, 100=0.0337, 500=0.0247, 2500=0.0209 (EUR)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Product Range"; Value = "C Series"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "131460"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2522597"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SVHC"; Value = "No SVHC (15-Jun-2015)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C10"; Footprint = "0603Cap"; UniqueID = "\MCMTBGUO"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Automotive Qualification Standard"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "0.1µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance Tolerance"; Value = "± 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ceramic Capacitor Case"; Value = "0603 [1608 Metric]"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2112158.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2112158.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://www.farnell.com/datasheets/2316283.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.farnell.com/datasheets/2316283.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "https://api.kemet.com/component-edge/download/datasheet/C0603C104K4RAC7081.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "https://api.kemet.com/component-edge/download/datasheet/C0603C104K4RAC7081.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dielectric Characteristic"; Value = "X7R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "C0603C104K4RAC7081"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MSL"; Value = "MSL 1 - Unlimited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Cut Tape"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "10=0.0639, 100=0.0337, 500=0.0247, 2500=0.0209 (EUR)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Product Range"; Value = "C Series"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "131460"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2522597"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SVHC"; Value = "No SVHC (15-Jun-2015)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C15"; Footprint = "0603Cap"; UniqueID = "\DRVLERPJ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Automotive Qualification Standard"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "0.1µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitance Tolerance"; Value = "± 10%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ceramic Capacitor Case"; Value = "0603 [1608 Metric]"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2112158.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2112158.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://www.farnell.com/datasheets/2316283.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.farnell.com/datasheets/2316283.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "https://api.kemet.com/component-edge/download/datasheet/C0603C104K4RAC7081.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "https://api.kemet.com/component-edge/download/datasheet/C0603C104K4RAC7081.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dielectric Characteristic"; Value = "X7R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "C0603C104K4RAC7081"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MSL"; Value = "MSL 1 - Unlimited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Min"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Cut Tape"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "10=0.0639, 100=0.0337, 500=0.0247, 2500=0.0209 (EUR)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Product Range"; Value = "C Series"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "131460"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2522597"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SVHC"; Value = "No SVHC (15-Jun-2015)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=U4(LORA MODULE ES0)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=PA12 Pin=U4-1
+Added Pin To Net: NetName=GND Pin=U4-3
+Added Pin To Net: NetName=+3V3 Pin=U4-4
+Added Pin To Net: NetName=+3V3 Pin=U4-5
+Added Pin To Net: NetName=+3V3 Pin=U4-6
+Added Pin To Net: NetName=GND Pin=U4-7
+Added Pin To Net: NetName=MOSI Pin=U4-14
+Added Pin To Net: NetName=MISO Pin=U4-15
+Added Pin To Net: NetName=SCK Pin=U4-16
+Added Pin To Net: NetName=NSS Pin=U4-17
+Added Pin To Net: NetName=PA10 Pin=U4-18
+Added Pin To Net: NetName=PA9 Pin=U4-19
+Added Pin To Net: NetName=EN Pin=U4-20
+Added Pin To Net: NetName=PA5 Pin=U4-21
+Added Pin To Net: NetName=PA4 Pin=U4-22
+Added Pin To Net: NetName=RX Pin=U4-23
+Added Pin To Net: NetName=TX Pin=U4-24
+Added Pin To Net: NetName=GND Pin=U4-25
+Added Pin To Net: NetName=ANT Pin=U4-26
+Added Pin To Net: NetName=GND Pin=U4-27
+Added Pin To Net: NetName=+3V3 Pin=U4-32
+Added Pin To Net: NetName=PA0 Pin=U4-33
+Added Pin To Net: NetName=MCU_nRST Pin=U4-34
+Added Pin To Net: NetName=SCL Pin=U4-35
+Added Pin To Net: NetName=SDA Pin=U4-36
+Added Pin To Net: NetName=PB2 Pin=U4-37
+Added Pin To Net: NetName=PB7 Pin=U4-38
+Added Pin To Net: NetName=PB6 Pin=U4-39
+Added Pin To Net: NetName=PB5 Pin=U4-40
+Added Pin To Net: NetName=SWDIO Pin=U4-41
+Added Pin To Net: NetName=SWCLK Pin=U4-42
+Added Pin To Net: NetName=BOOT0 Pin=U4-43
+Added Pin To Net: NetName=GND Pin=U4-44
+Added Pin To Net: NetName=PH1 Pin=U4-45
+Added Pin To Net: NetName=PH0 Pin=U4-46
+Added Pin To Net: NetName=GND Pin=U4-49
+Added Pin To Net: NetName=GND Pin=U4-50
+Added Pin To Net: NetName=GND Pin=U4-51
+Added Pin To Net: NetName=GND Pin=U4-52
+Added Pin To Net: NetName=GND Pin=U4-53
+Added Pin To Net: NetName=GND Pin=U4-54
+Added Pin To Net: NetName=GND Pin=U4-55
+Added Pin To Net: NetName=GND Pin=U4-56
+Added Pin To Net: NetName=GND Pin=U4-57
+Added Pin To Net: NetName=NetR8_2 Pin=R8-2
+Added Pin To Net: NetName=NetR8_2 Pin=U4-2
+Added Net: Name=NetR8_2
+Added Pin To Net: NetName=NetR14_2 Pin=R14-2
+Added Pin To Net: NetName=NetR14_2 Pin=U4-48
+Added Net: Name=NetR14_2
+Added Pin To Net: NetName=NetT1_1 Pin=T1-1
+Added Pin To Net: NetName=NetT1_1 Pin=U4-8
+Added Net: Name=NetT1_1
+Added Pin To Net: NetName=NetT2_1 Pin=T2-1
+Added Pin To Net: NetName=NetT2_1 Pin=U4-9
+Added Net: Name=NetT2_1
+Added Pin To Net: NetName=NetT3_1 Pin=T3-1
+Added Pin To Net: NetName=NetT3_1 Pin=U4-10
+Added Net: Name=NetT3_1
+Added Pin To Net: NetName=NetT4_1 Pin=T4-1
+Added Pin To Net: NetName=NetT4_1 Pin=U4-11
+Added Net: Name=NetT4_1
+Added Pin To Net: NetName=NetT5_1 Pin=T5-1
+Added Pin To Net: NetName=NetT5_1 Pin=U4-12
+Added Net: Name=NetT5_1
+Added Member To Class: ClassName=PAGE2 - MCU Member=Component U4 Lora module ES0
+Added Room: Name=PAGE2 - MCU

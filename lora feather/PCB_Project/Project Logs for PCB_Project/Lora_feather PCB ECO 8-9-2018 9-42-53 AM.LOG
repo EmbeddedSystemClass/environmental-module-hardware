@@ -1,0 +1,168 @@
+Removed Pin From Net: NetName=RX Pin=MOD1-18
+Removed Pin From Net: NetName=TX Pin=MOD1-19
+Removed Pin From Net: NetName=CAN_Rs Pin=MOD1-23
+Removed Pin From Net: NetName=PA2 Pin=MOD1-24
+Removed Pin From Net: NetName=PB5 Pin=MOD1-40
+Removed Pin From Net: NetName=PA12 Pin=MOD1-48
+Removed Pin From Net: NetName=PA11 Pin=P1-1
+Removed Pin From Net: NetName=PB5 Pin=P1-2
+Removed Pin From Net: NetName=PB6 Pin=P1-3
+Removed Pin From Net: NetName=PB7 Pin=P1-4
+Removed Pin From Net: NetName=PH0 Pin=P1-5
+Removed Pin From Net: NetName=PH1 Pin=P1-6
+Removed Pin From Net: NetName=BOOT0 Pin=P1-7
+Removed Pin From Net: NetName=PB2 Pin=P1-10
+Removed Pin From Net: NetName=SDA Pin=P1-11
+Removed Pin From Net: NetName=SCL Pin=P1-12
+Removed Pin From Net: NetName=EN Pin=P2-1
+Removed Pin From Net: NetName=NSS Pin=P2-6
+Removed Pin From Net: NetName=SCK Pin=P2-7
+Removed Pin From Net: NetName=PA4 Pin=P2-8
+Removed Pin From Net: NetName=PA0 Pin=P2-9
+Removed Pin From Net: NetName=NetJ1_5 Pin=R8-1
+Removed Pin From Net: NetName=+3V3 Pin=R8-2
+Removed Pin From Net: NetName=CANL Pin=R11-1
+Removed Pin From Net: NetName=CANH Pin=R11-2
+Removed Pin From Net: NetName=PA5 Pin=U1-16
+Removed Member From Class: ClassName=PAGE2 - MCU Member=R11
+Added Component: Designator=C1(0603Cap)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Applications"; Value = "Acoustic Noise Reduction"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance"; Value = "10µF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://farnell.com//datasheets/2243360.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://farnell.com//datasheets/2243360.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "http://www.farnell.com/datasheets/2163235.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.farnell.com/datasheets/2163235.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/ZRB18AR61E106ME01-01.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/ZRB18AR61E106ME01-01.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "http://www.farnell.com/datasheets/2243360.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "http://www.farnell.com/datasheets/2243360.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Family"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Interposer Termination"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height - Seated (Max)"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Spacing"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Style"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Murata"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "ZRB18AR61E106ME01L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount, MLCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-55°C ~ 85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "0603 (1608 Metric)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel (TR)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ratings"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "ZRB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size / Dimension"; Value = "0.063" L x 0.031" W (1.60mm x 0.80mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2666614"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Thickness (Max)"; Value = "0.047" (1.20mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "±20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Rated"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=D1(LED)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2163492.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2163492.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Kingbright"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "KPG1-1608VGC-TT-5MAV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "5=0.579, 25=0.542, 100=0.504, 250=0.48, 500=0.443, 1000=0.406 (EUR)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "3955"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2671383"; VariantName = "[No Variations]"
+Added Component: Designator=R14(0603Res)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Category"; Value = "Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/2461/dcrcwe3-2461968.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/2461/dcrcwe3-2461968.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/2461/dcrcwe3-2461969.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/2461/dcrcwe3-2461969.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/2461/dcrcwe3-2461970.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/2461/dcrcwe3-2461970.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/8340/dcrcwe3-8340197.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/8340/dcrcwe3-8340197.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.ciiva.com/16941/dcrcw-16941302.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.ciiva.com/16941/dcrcw-16941302.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "https://datasheet.ciiva.com/16199/dcrcwe3-16199063.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "https://datasheet.ciiva.com/16199/dcrcwe3-16199063.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7Description"; Value = "https://datasheet.ciiva.com/16725/70201119-16725175.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7URL"; Value = "https://datasheet.ciiva.com/16725/70201119-16725175.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8Description"; Value = "https://datasheet.ciiva.com/26316/fld-crcw-e3-data-en-26316615.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8URL"; Value = "https://datasheet.ciiva.com/26316/fld-crcw-e3-data-en-26316615.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink9Description"; Value = "https://datasheet.ciiva.com/5544/dcrcwe3-109170-5544344.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink9URL"; Value = "https://datasheet.ciiva.com/5544/dcrcwe3-109170-5544344.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink10Description"; Value = "https://datasheet.ciiva.com/7841/1720486-7841816.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink10URL"; Value = "https://datasheet.ciiva.com/7841/1720486-7841816.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink11Description"; Value = "https://datasheet.ciiva.com/7841/1720486-7841817.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink11URL"; Value = "https://datasheet.ciiva.com/7841/1720486-7841817.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink12Description"; Value = "https://datasheet.ciiva.com/7841/125364-7841818.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink12URL"; Value = "https://datasheet.ciiva.com/7841/125364-7841818.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink13Description"; Value = "https://datasheet.ciiva.com/16721/70201119-16721450.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink13URL"; Value = "https://datasheet.ciiva.com/16721/70201119-16721450.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thick Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EDA / CAD Models"; Value = "Download from Accelerated Designs"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Family"; Value = "Chip Resistor - Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Automotive AEC-Q200"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.020" (0.50mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kits"; Value = "541-1419-ND  - RESISTOR KIT 0-1M 1/10W 6100PCS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRCW06030000Z0EA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Online Catalog"; Value = "CRCW - Automotive Series"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-55°C ~ 155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Other Names"; Value = "541-0.0GCT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "0603 (1608 Metric)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape (CT)   "; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power (Watts)"; Value = "0.1W, 1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "5000=0.0046 (EUR)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance (Ohms)"; Value = "0.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "CRCW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size / Dimension"; Value = "0.061" L x 0.033" W (1.55mm x 0.85mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Standard Package"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "1145000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Device Package"; Value = "0603 (1608 Metric)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2122112"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "Jumper"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3V3 Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=+3V3 Pin=C11-2
+Added Pin To Net: NetName=PA11 Pin=D1-1
+Added Pin To Net: NetName=GND Pin=D1-2
+Added Pin To Net: NetName=+3V3 Pin=MOD1-4
+Added Pin To Net: NetName=CAN_Rs Pin=MOD1-18
+Added Pin To Net: NetName=PA2 Pin=MOD1-19
+Added Pin To Net: NetName=RX Pin=MOD1-23
+Added Pin To Net: NetName=TX Pin=MOD1-24
+Added Pin To Net: NetName=+3V3 Pin=MOD1-32
+Added Pin To Net: NetName=PB5 Pin=MOD1-48
+Added Pin To Net: NetName=+3V3 Pin=P1-1
+Added Pin To Net: NetName=EN Pin=P1-2
+Added Pin To Net: NetName=PB2 Pin=P1-4
+Added Pin To Net: NetName=PB7 Pin=P1-5
+Added Pin To Net: NetName=PH0 Pin=P1-6
+Added Pin To Net: NetName=PH1 Pin=P1-7
+Added Pin To Net: NetName=PB6 Pin=P1-10
+Added Pin To Net: NetName=SCL Pin=P1-11
+Added Pin To Net: NetName=SDA Pin=P1-12
+Added Pin To Net: NetName=BOOT0 Pin=P2-1
+Added Pin To Net: NetName=SCK Pin=P2-6
+Added Pin To Net: NetName=NSS Pin=P2-7
+Added Pin To Net: NetName=PA2 Pin=P2-8
+Added Pin To Net: NetName=CAN_Rs Pin=P2-9
+Added Pin To Net: NetName=PA4 Pin=P2-10
+Added Pin To Net: NetName=PA5 Pin=P2-11
+Added Pin To Net: NetName=PA0 Pin=P2-12
+Added Pin To Net: NetName=+3V3 Pin=P2-14
+Added Pin To Net: NetName=GND Pin=R8-1
+Added Pin To Net: NetName=NetJ1_5 Pin=R8-2
+Added Pin To Net: NetName=PA12 Pin=R14-1
+Added Pin To Net: NetName=PB5 Pin=R14-2
+Added Pin To Net: NetName=NSS Pin=U1-16
+Change Net Name : Old Net Name=+3V3 New Net Name=VBAT
+Change Net Name : Old Net Name=PA2 New Net Name=PA9
+Change Net Name : Old Net Name=PA11 New Net Name=NetD1_1
+Change Net Name : Old Net Name=PB5 New Net Name=NetMOD1_48
+Added Member To Class: ClassName=PAGE2 - MCU Member=Component C1 10uF
+Added Member To Class: ClassName=PAGE2 - MCU Member=Component D1 LED diode
+Added Member To Class: ClassName=PAGE2 - MCU Member=Component R14 0R

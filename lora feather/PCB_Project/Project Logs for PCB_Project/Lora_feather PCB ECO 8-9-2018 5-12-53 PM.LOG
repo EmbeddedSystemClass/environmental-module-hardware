@@ -1,0 +1,11 @@
+Added Component: Designator=D1(LED)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2163492.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2163492.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Kingbright"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "KPG1-1608VGC-TT-5MAV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "5=0.579, 25=0.542, 100=0.504, 250=0.48, 500=0.443, 1000=0.406 (EUR)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "3955"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2671383"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=PAGE2 - MCU Member=Component D1 LED diode

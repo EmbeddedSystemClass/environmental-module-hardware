@@ -1,0 +1,23 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Lora_feather.PcbDoc   9/7/2018  6:25:32 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Lora_feather.TXT
+EIA File   : Lora_feather.DRL
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      12mil (0.3mm)                                             Round             285       PTH        25.83inch (656.09mm)
+T2      28mil (0.7mm)                                             Round             16        PTH        4.31inch (109.51mm)
+T3      35mil (0.9mm)                                             Round             44        PTH        7.69inch (195.40mm)
+T4      39mil (1mm)                                               Round             2         PTH        0.09inch (2.20mm)
+T5      65mil (1.65mm)                                            Round             4         NPTH       4.40inch (111.68mm)
+T6      90mil (2.286mm)                                           Round             2         NPTH       0.76inch (19.37mm)
+T7      100mil (2.54mm)                                           Round             2         NPTH       0.70inch (17.80mm)
+T8      131mil (3.33mm)                                           Round             2         NPTH       3.41inch (86.58mm)
+T9      135mil (3.43mm)                                           Round             2         NPTH       3.41inch (86.64mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              359
+
+Total Processing Time (hh:mm:ss) : 00:00:00

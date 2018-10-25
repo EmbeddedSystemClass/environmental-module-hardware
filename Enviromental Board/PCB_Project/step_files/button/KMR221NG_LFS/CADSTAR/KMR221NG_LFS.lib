@@ -1,0 +1,17 @@
+.KMR221NG_LFS :1 ;Tactile Switches Tact
+KMR2_1
+*STM S
+*NGS
+*PLB 1="1" 2="2" 3="3" 4="4"
+*MXP 4
+*DFN KMR221NG_LFS
+~!Manufacturer_Name (C & K COMPONENTS)
+~!Manufacturer_Part_Number (KMR221NG LFS)
+~!RS Part Number (1359490)
+~!Link RS Price/Stock (http://uk.rs-online.com/web/p/products/1359490)
+~!Arrow Part Number (KMR221NG LFS)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/kmr221nglfs/ck)
+~!Link Datasheet (http://www.ckswitches.com/media/1479/kmr2.pdf)
+~!Height (-)
+KMR221NG_LFS
+1.1!U 2.1!U 3.1!U 4.1!U 

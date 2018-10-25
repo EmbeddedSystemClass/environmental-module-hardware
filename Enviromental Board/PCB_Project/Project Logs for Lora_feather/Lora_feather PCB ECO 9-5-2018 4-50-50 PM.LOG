@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=+3V3 Pin=R1-1
+Removed Pin From Net: NetName=NetC5_1 Pin=R1-2
+Removed Pin From Net: NetName=+3V3 Pin=R11-1
+Removed Pin From Net: NetName=NetR11_2 Pin=R11-2
+Removed Member From Class: ClassName=PAGE2 - MCU Member=R1
+Removed Member From Class: ClassName=PAGE2 - MCU Member=R11
+Added Component: Designator=P7(SOLDER JUMPER)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P8(SOLDER JUMPER)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=+3V3 Pin=P7-1
+Added Pin To Net: NetName=NetC5_1 Pin=P7-2
+Added Pin To Net: NetName=+3V3 Pin=P8-1
+Added Pin To Net: NetName=NetR11_2 Pin=P8-2
+Change Net Name : Old Net Name=NetR11_2 New Net Name=NetP8_2
+Added Member To Class: ClassName=PAGE2 - MCU Member=Component P7 Solder jumper
+Added Member To Class: ClassName=PAGE2 - MCU Member=Component P8 Solder jumper

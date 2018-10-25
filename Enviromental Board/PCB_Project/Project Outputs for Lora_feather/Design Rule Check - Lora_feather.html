@@ -1,0 +1,464 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD18\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">09/08/2018</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">10:38:03 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc" class="file"><acronym title="C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc">C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">40</td></tr>
+</table>
+</td>
+</table><a name="IDKD4NWRRKR1GWNXLRDCBVTNVKTF1JGWVGCVUFNLDY3FVMK0QBBFMM"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUVLSUXLXUKGQEM4PH31QCPSDYOUUDRH0W2W1KQBH2JQX5TYCNMKH">Clearance Constraint (Gap=0.178mm) (All),(All)</a></td>
+<td class="column2">14</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXD1GMJFHNOFDPJXLYKETLPOEBKWMC5HJVRNHU4FD3AZEK4LFLOJI">Clearance Constraint (Gap=0.157mm) (InNetClass('50R')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMEDEBVDB43RFDOTVU4TXDFTJHB0PE425MF42XXKJLQPYVBOR4LG">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJ1IFWIWCDYCOMUV0FMDPWFTUGN10PYNXLIKRMVD4OGMUFWTAMM1F">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYOE1Q53QA1OHPVOQONOCIPAVSD4VCGGYMX1W1JJHR4SDR03AOYWI">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDP1AQ3MYR4B4HD4T2SA5QGEYG0GO3ORCC1QSXQZJNKYHN5YQPPEID">Width Constraint (Min=0.203mm) (Max=0.762mm) (Preferred=0.305mm) (All)</a></td>
+<td class="column2">14</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDVSQEVNUB0D4WE0PWSGSLNDJBINC1MRRFTUQ1RLMGZDMCMVMXKNEI">Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDE3SCB5MCPFGLFSSMGRGEWRLAXBIKUWZJVAIT31JZ4JALQDKXAL0">Hole Size Constraint (Min=0.025mm) (Max=3.81mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDRKQH4MYKAG40LBIT2SDU5QLQUCHGRUTNWGGPBNLK03JKUMSWA5DL">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKLICBLR2JO4XEEP4Y5NIU3MT5JG3ANBPFTOY5AGDTLLVHBNKFQID">Minimum Solder Mask Sliver (Gap=0.01mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDODMM2VTOEWC3EBCK5KHSRUGBGB0ZFCAGOES424ECOHR4CG3PAHHG">Silk To Solder Mask (Clearance=0.01mm) (IsPad),(All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDDPYV33EVXUCVDCAIJGL2SUDMHCULFUTSFKI33TKJC2XVQW2MUWUL">Silk to Silk (Clearance=0.005mm) (All),(All)</a></td>
+<td class="column2">8</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKCH0NOWHQ1UFG21SM52VNAAFMENR1AKCLYOJRJDPGCCF0NQ2K5UH">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0EVVVSQMYB1GBZPGC2RSKHIKHPNXSGNVZI0MQUNO0W3VVT2E5BAB">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">40</td>
+</tr>
+</table><br><a name="IDUVLSUXLXUKGQEM4PH31QCPSDYOUUDRH0W2W1KQBH2JQX5TYCNMKH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=0.178mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.946mil|Location2.X=4362.196mil|Location1.Y=4269.794mil|Location2.Y=4278.044mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.946mil|Location2.X=4362.196mil|Location1.Y=4269.794mil|Location2.Y=4278.044mil|Absolute=True">Clearance Constraint: (0.154mm &lt; 0.178mm) Between Arc (110.653mm,108.127mm) on Top Layer And Arc (110.737mm,108.127mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.946mil|Location2.X=4362.196mil|Location1.Y=4235.893mil|Location2.Y=4244.143mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.946mil|Location2.X=4362.196mil|Location1.Y=4235.893mil|Location2.Y=4244.143mil|Absolute=True">Clearance Constraint: (0.154mm &lt; 0.178mm) Between Arc (110.653mm,108.127mm) on Top Layer And Arc (110.737mm,108.127mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.946mil|Location2.X=4362.196mil|Location1.Y=4269.832mil|Location2.Y=4278.082mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.946mil|Location2.X=4362.196mil|Location1.Y=4269.832mil|Location2.Y=4278.082mil|Absolute=True">Clearance Constraint: (0.154mm &lt; 0.178mm) Between Arc (110.653mm,108.127mm) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.946mil|Location2.X=4362.196mil|Location1.Y=4235.907mil|Location2.Y=4244.157mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.946mil|Location2.X=4362.196mil|Location1.Y=4235.907mil|Location2.Y=4244.157mil|Absolute=True">Clearance Constraint: (0.154mm &lt; 0.178mm) Between Arc (110.653mm,108.127mm) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.946mil|Location2.X=4362.196mil|Location1.Y=4235.893mil|Location2.Y=4244.143mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.946mil|Location2.X=4362.196mil|Location1.Y=4235.893mil|Location2.Y=4244.143mil|Absolute=True">Clearance Constraint: (0.154mm &lt; 0.178mm) Between Arc (110.737mm,108.127mm) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.946mil|Location2.X=4362.196mil|Location1.Y=4269.78mil|Location2.Y=4278.03mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.946mil|Location2.X=4362.196mil|Location1.Y=4269.78mil|Location2.Y=4278.03mil|Absolute=True">Clearance Constraint: (0.154mm &lt; 0.178mm) Between Arc (110.737mm,108.127mm) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3861.82mil|Location2.X=3870.07mil|Location1.Y=3968.177mil|Location2.Y=3976.427mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3861.82mil|Location2.X=3870.07mil|Location1.Y=3968.177mil|Location2.Y=3976.427mil|Absolute=True">Clearance Constraint: (0.154mm &lt; 0.178mm) Between Arc (98.153mm,101.327mm) on Top Layer And Arc (98.237mm,101.327mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3861.82mil|Location2.X=3870.07mil|Location1.Y=4002.077mil|Location2.Y=4010.327mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3861.82mil|Location2.X=3870.07mil|Location1.Y=4002.077mil|Location2.Y=4010.327mil|Absolute=True">Clearance Constraint: (0.154mm &lt; 0.178mm) Between Arc (98.153mm,101.327mm) on Top Layer And Arc (98.237mm,101.327mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3861.82mil|Location2.X=3870.07mil|Location1.Y=4002.116mil|Location2.Y=4010.366mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3861.82mil|Location2.X=3870.07mil|Location1.Y=4002.116mil|Location2.Y=4010.366mil|Absolute=True">Clearance Constraint: (0.154mm &lt; 0.178mm) Between Arc (98.153mm,101.327mm) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3861.82mil|Location2.X=3870.07mil|Location1.Y=3968.191mil|Location2.Y=3976.441mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3861.82mil|Location2.X=3870.07mil|Location1.Y=3968.191mil|Location2.Y=3976.441mil|Absolute=True">Clearance Constraint: (0.154mm &lt; 0.178mm) Between Arc (98.153mm,101.327mm) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3861.82mil|Location2.X=3870.07mil|Location1.Y=4002.063mil|Location2.Y=4010.313mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3861.82mil|Location2.X=3870.07mil|Location1.Y=4002.063mil|Location2.Y=4010.313mil|Absolute=True">Clearance Constraint: (0.154mm &lt; 0.178mm) Between Arc (98.237mm,101.327mm) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3861.82mil|Location2.X=3870.07mil|Location1.Y=3968.177mil|Location2.Y=3976.427mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3861.82mil|Location2.X=3870.07mil|Location1.Y=3968.177mil|Location2.Y=3976.427mil|Absolute=True">Clearance Constraint: (0.154mm &lt; 0.178mm) Between Arc (98.237mm,101.327mm) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3861.82mil|Location2.X=3870.07mil|Location1.Y=4002.095mil|Location2.Y=4010.345mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3861.82mil|Location2.X=3870.07mil|Location1.Y=4002.095mil|Location2.Y=4010.345mil|Absolute=True">Clearance Constraint: (0.154mm &lt; 0.178mm) Between Region (0 hole(s)) Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.946mil|Location2.X=4362.196mil|Location1.Y=4269.812mil|Location2.Y=4278.062mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.946mil|Location2.X=4362.196mil|Location1.Y=4269.812mil|Location2.Y=4278.062mil|Absolute=True">Clearance Constraint: (0.154mm &lt; 0.178mm) Between Region (0 hole(s)) Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDP1AQ3MYR4B4HD4T2SA5QGEYG0GO3ORCC1QSXQZJNKYHN5YQPPEID"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Width Constraint (Min=0.203mm) (Max=0.762mm) (Preferred=0.305mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4338.073mil|Location2.X=4353.225mil|Location1.Y=4240.094mil|Location2.Y=4250.743mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4338.073mil|Location2.X=4353.225mil|Location1.Y=4240.094mil|Location2.Y=4250.743mil|Absolute=True">Width Constraint: Arc (110.653mm,108.127mm) on Top Layer Actual Width = 0.152mm, Target Width = 0.203mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4338.073mil|Location2.X=4353.146mil|Location1.Y=4263.194mil|Location2.Y=4273.904mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4338.073mil|Location2.X=4353.146mil|Location1.Y=4263.194mil|Location2.Y=4273.904mil|Absolute=True">Width Constraint: Arc (110.653mm,108.127mm) on Top Layer Actual Width = 0.152mm, Target Width = 0.203mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4369.02mil|Location2.X=4384.117mil|Location1.Y=4241.68mil|Location2.Y=4252.371mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4369.02mil|Location2.X=4384.117mil|Location1.Y=4241.68mil|Location2.Y=4252.371mil|Absolute=True">Width Constraint: Arc (110.737mm,108.127mm) on Top Layer Actual Width = 0.152mm, Target Width = 0.203mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4371.239mil|Location2.X=4385.032mil|Location1.Y=4257.087mil|Location2.Y=4268.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4371.239mil|Location2.X=4385.032mil|Location1.Y=4257.087mil|Location2.Y=4268.562mil|Absolute=True">Width Constraint: Arc (110.737mm,108.127mm) on Top Layer Actual Width = 0.152mm, Target Width = 0.203mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4363.463mil|Location2.X=4380.328mil|Location1.Y=4237.02mil|Location2.Y=4246.02mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4363.463mil|Location2.X=4380.328mil|Location1.Y=4237.02mil|Location2.Y=4246.02mil|Absolute=True">Width Constraint: Arc (110.737mm,108.127mm) on Top Layer Actual Width = 0.152mm, Target Width = 0.203mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3852.13mil|Location2.X=3869.107mil|Location1.Y=4000.494mil|Location2.Y=4009.494mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3852.13mil|Location2.X=3869.107mil|Location1.Y=4000.494mil|Location2.Y=4009.494mil|Absolute=True">Width Constraint: Arc (98.153mm,101.327mm) on Top Layer Actual Width = 0.152mm, Target Width = 0.203mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3844.086mil|Location2.X=3858.036mil|Location1.Y=3992.505mil|Location2.Y=4003.906mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3844.086mil|Location2.X=3858.036mil|Location1.Y=3992.505mil|Location2.Y=4003.906mil|Absolute=True">Width Constraint: Arc (98.153mm,101.327mm) on Top Layer Actual Width = 0.152mm, Target Width = 0.203mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3845.947mil|Location2.X=3861.099mil|Location1.Y=3972.378mil|Location2.Y=3983.026mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3845.947mil|Location2.X=3861.099mil|Location1.Y=3972.378mil|Location2.Y=3983.026mil|Absolute=True">Width Constraint: Arc (98.153mm,101.327mm) on Top Layer Actual Width = 0.152mm, Target Width = 0.203mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3871.337mil|Location2.X=3888.202mil|Location1.Y=3969.304mil|Location2.Y=3978.304mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3871.337mil|Location2.X=3888.202mil|Location1.Y=3969.304mil|Location2.Y=3978.304mil|Absolute=True">Width Constraint: Arc (98.237mm,101.327mm) on Top Layer Actual Width = 0.152mm, Target Width = 0.203mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.732mil|Location2.X=3892.923mil|Location1.Y=3987.53mil|Location2.Y=3999.242mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.732mil|Location2.X=3892.923mil|Location1.Y=3987.53mil|Location2.Y=3999.242mil|Absolute=True">Width Constraint: Arc (98.237mm,101.327mm) on Top Layer Actual Width = 0.152mm, Target Width = 0.203mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3871.169mil|Location2.X=3888.114mil|Location1.Y=4000.289mil|Location2.Y=4009.289mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3871.169mil|Location2.X=3888.114mil|Location1.Y=4000.289mil|Location2.Y=4009.289mil|Absolute=True">Width Constraint: Arc (98.237mm,101.327mm) on Top Layer Actual Width = 0.152mm, Target Width = 0.203mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3878.165mil|Location2.X=3892.56mil|Location1.Y=3975.822mil|Location2.Y=3986.986mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3878.165mil|Location2.X=3892.56mil|Location1.Y=3975.822mil|Location2.Y=3986.986mil|Absolute=True">Width Constraint: Arc (98.237mm,101.327mm) on Top Layer Actual Width = 0.152mm, Target Width = 0.203mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.517mil|Location2.X=3892.844mil|Location1.Y=3978.651mil|Location2.Y=3990.316mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.517mil|Location2.X=3892.844mil|Location1.Y=3978.651mil|Location2.Y=3990.316mil|Absolute=True">Width Constraint: Arc (98.237mm,101.327mm) on Top Layer Actual Width = 0.152mm, Target Width = 0.203mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3876.328mil|Location2.X=3891.685mil|Location1.Y=3973.277mil|Location2.Y=3983.758mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3876.328mil|Location2.X=3891.685mil|Location1.Y=3973.277mil|Location2.Y=3983.758mil|Absolute=True">Width Constraint: Arc (98.237mm,101.327mm) on Top Layer Actual Width = 0.152mm, Target Width = 0.203mm</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDODMM2VTOEWC3EBCK5KHSRUGBGB0ZFCAGOES424ECOHR4CG3PAHHG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.01mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3705.189mil|Location2.X=3706.452mil|Location1.Y=4286.495mil|Location2.Y=4287.757mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3705.189mil|Location2.X=3706.452mil|Location1.Y=4286.495mil|Location2.Y=4287.757mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.01mm) Between Arc (94.21mm,108.95mm) on Top Overlay And Pad C1-2(93.97mm,108.493mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4802.912mil|Location2.X=4804.175mil|Location1.Y=3850.944mil|Location2.Y=3852.206mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4802.912mil|Location2.X=4804.175mil|Location1.Y=3850.944mil|Location2.Y=3852.206mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.01mm) Between Pad R7-2(121.822mm,97.66mm) on Top Layer And Text "R7" (122.01mm,97.83mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3945.974mil|Location2.X=3951.156mil|Location1.Y=4026.989mil|Location2.Y=4032.241mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3945.974mil|Location2.X=3951.156mil|Location1.Y=4026.989mil|Location2.Y=4032.241mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.004mm &lt; 0.01mm) Between Pad U1-10(100.75mm,102.12mm) on Top Layer And Text "C7" (100.2mm,102.25mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.004mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3947.203mil|Location2.X=3948.466mil|Location1.Y=4038.148mil|Location2.Y=4039.411mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3947.203mil|Location2.X=3948.466mil|Location1.Y=4038.148mil|Location2.Y=4039.411mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.01mm) Between Pad U1-9(100.75mm,102.77mm) on Top Layer And Text "C7" (100.2mm,102.25mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDDPYV33EVXUCVDCAIJGL2SUDMHCULFUTSFKI33TKJC2XVQW2MUWUL"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=0.005mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3657.644mil|Location2.X=3658.777mil|Location1.Y=4210.748mil|Location2.Y=4211.881mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3657.644mil|Location2.X=3658.777mil|Location1.Y=4210.748mil|Location2.Y=4211.881mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.005mm) Between Text "C1" (92.96mm,105.99mm) on Top Overlay And Track (84.06mm,107.03mm)(92.86mm,107.03mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3657.644mil|Location2.X=3658.777mil|Location1.Y=4210.748mil|Location2.Y=4211.881mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3657.644mil|Location2.X=3658.777mil|Location1.Y=4210.748mil|Location2.Y=4211.881mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.005mm) Between Text "C1" (92.96mm,105.99mm) on Top Overlay And Track (92.86mm,107.03mm)(92.86mm,117.23mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3853.76mil|Location2.X=3854.894mil|Location1.Y=4508.189mil|Location2.Y=4509.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3853.76mil|Location2.X=3854.894mil|Location1.Y=4508.189mil|Location2.Y=4509.323mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.005mm) Between Text "C16" (97.6mm,113.89mm) on Top Overlay And Track (93.98mm,114.58mm)(124.46mm,114.58mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3845.73mil|Location2.X=3847.18mil|Location1.Y=4480.082mil|Location2.Y=4481.532mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3845.73mil|Location2.X=3847.18mil|Location1.Y=4480.082mil|Location2.Y=4481.532mil|Absolute=True">Silk To Silk Clearance Constraint: (0.005mm &lt; 0.005mm) Between Text "C16" (97.6mm,113.89mm) on Top Overlay And Track (97.64mm,113.71mm)(100.84mm,113.71mm) on Top Overlay Silk Text to Silk Clearance [0.005mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3775.505mil|Location2.X=3776.638mil|Location1.Y=3932.495mil|Location2.Y=3933.629mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3775.505mil|Location2.X=3776.638mil|Location1.Y=3932.495mil|Location2.Y=3933.629mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.005mm) Between Text "C17" (94.1mm,99.2mm) on Top Overlay And Track (96mm,99mm)(96mm,102.2mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4251.052mil|Location2.X=4252.185mil|Location1.Y=4109.051mil|Location2.Y=4110.184mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4251.052mil|Location2.X=4252.185mil|Location1.Y=4109.051mil|Location2.Y=4110.184mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.005mm) Between Text "C18" (107.69mm,103.66mm) on Top Overlay And Track (107.38mm,104.42mm)(107.92mm,104.42mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3658.591mil|Location2.X=3659.725mil|Location1.Y=4546.677mil|Location2.Y=4547.811mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3658.591mil|Location2.X=3659.725mil|Location1.Y=4546.677mil|Location2.Y=4547.811mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.005mm) Between Text "P1" (93.7mm,115.5mm) on Top Overlay And Track (92.86mm,107.03mm)(92.86mm,117.23mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4802.977mil|Location2.X=4804.11mil|Location1.Y=3875.811mil|Location2.Y=3876.945mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\OneDrive\IRNAS-Common\Electronics-Development\Agrelaeco\lora feather_ver0.2\lora feather\PCB_Project\Lora_feather.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4802.977mil|Location2.X=4804.11mil|Location1.Y=3875.811mil|Location2.Y=3876.945mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.005mm) Between Text "R7" (122.01mm,97.83mm) on Top Overlay And Track (121.17mm,98.46mm)(124.27mm,98.46mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

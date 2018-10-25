@@ -1,0 +1,50 @@
+PCBNEW-LibModule-V1  2018-07-26 12:36:49
+# encoding utf-8
+Units mm
+$INDEX
+KMR2_1
+$EndINDEX
+$MODULE KMR2_1
+Po 0 0 0 15 5b59b251 00000000 ~~
+Li KMR2_1
+Cd kmr2
+Kw Switch
+Sc 0
+At SMD
+AR 
+Op 0 0 0
+T0 -0.36915 0.01236 1.27 1.27 0 0.254 N V 21 N "S**"
+T1 -0.36915 0.01236 1.27 1.27 0 0.254 N I 21 N "KMR2_1"
+DS -2.1 -1.4 2.1 -1.4 0.254 24
+DS 2.1 -1.4 2.1 1.4 0.254 24
+DS 2.1 1.4 -2.1 1.4 0.254 24
+DS -2.1 1.4 -2.1 -1.4 0.254 24
+DS -1.3 -1.4 1.3 -1.4 0.254 21
+DS -1.3 1.4 1.3 1.4 0.254 21
+DC -2.851 0.748 -2.888 0.748 0.254 21
+$PAD
+Po -2.05 0.8
+Sh "1" R 0.9 1 0 0 0
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 2.05 0.8
+Sh "2" R 0.9 1 0 0 0
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 2.05 -0.8
+Sh "3" R 0.9 1 0 0 0
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po -2.05 -0.8
+Sh "4" R 0.9 1 0 0 0
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$EndMODULE KMR2_1
+$EndLIBRARY

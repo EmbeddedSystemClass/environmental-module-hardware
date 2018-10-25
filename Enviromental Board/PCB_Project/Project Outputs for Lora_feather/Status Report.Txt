@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 11:15:03 PM On 09/19/2018
+
+Output: Generates pick and place files panel
+Type  : Pick Place
+From  : Variant [[No Variations]] of PCB Document [Lora_feather_panel.PcbDoc]
+   Generated File[Pick Place for Lora_feather_panel.csv]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 11:15:10 PM On 09/19/2018

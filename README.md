@@ -39,7 +39,7 @@ Enviromental module is adafruit feather compatible pinout hardware module. It ha
 
 Besides this pins, on board there are also ethernet connectors, modified for special use case scenario. It provides the board with +12V input voltage, Can bus, and Solar connection.
 
-
+![block_diagram](https://github.com/IRNAS/environmental-module-hardware/blob/master/Enviromental%20Board/PCB_Project/pictures/Block_diagram.PNG)
 
 #### License
 
